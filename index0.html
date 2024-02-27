@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>池州远航</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link  href="css/bootstrap.min.css" rel="stylesheet">
+    <link  href="css/base.css"  rel="stylesheet">
+<script src="js/jquery-1.11.0.min.js"></script>
+</head>
+<script>var s="生态绿化管理系统|扬尘检测系统|喷淋管理系统|岸电综合管理系统|船舶垃圾接收系统|雨污水处理控制系统",t=s.split('|');
+var s1="<li><div class='cicle'></div><div class='li-content' onclick='goto(1);'><span>";
+var s2="</span><span><img src='./images/up.png' alt=''></span></div></li>";
+var ss="";for(var j=0;j<t.length;j++){ss+=s1+t[j]+s2;} document.getElementById("LEFTA").innerHTML=ss;//$("#LEFTA").html(ss);
+</script>
+<body>
+    <!-- 头部模块 -->
+<header><h1><img src='logo.png' height='45'>&nbsp&nbsp<span>远航港口智慧平台</span></h1><p></header>
+
+<div class="main">
+        <!-- top5 -->
+<div class="top5"><div class="top5-title"><span onclick="goto(1);">安全环保管控系统</span></div>
+<div class="top5-content"><ul id='LEFTA'></ul></div>
+</div>
+
+
+<div class="total"> <div class="t-title"> 智能物流信息系统 </div>
+<div>
+  <div class="col-md-9 col-lg-6">
+    <div class="totalbox"><ul class="nav nav-pills totaltitle" role="tablist"><li class="fr" onclick="goto(2);"><p>物流管理平台</p></li></ul>
+      <div class="tab-content">
+<table class="t_table"><tbody>
+    <tr><td>客户合同管理系统</td><td>集疏运预约系统</td></tr>
+    <tr><td>物流服务协同系统</td><td>物流供求信息系统</td></tr>
+    <tr><td>智能通关物流平台</td><td>计费自动结算系统</td></tr>
+</tbody></table>
+      </div>
+     </div>
+   </div>
+
+  <div class="col-md-9 col-lg-6">
+    <div class="totalbox"><ul class="nav nav-pills totaltitle" role="tablist"><li class="fl" onclick="goto(3);"><p>生产调度平台</p></li></ul>
+      <div class="tab-content">
+<table class="t_table"><tbody>
+    <tr><td onclick="window.open('https://czport1.czport.com.cn/fst/d001.php','_blank')">散杂货管理系统</td><td>集装箱管理系统</td></tr>
+    <tr><td>调度指挥管理平台</td><td>智能卡口管理系统</td></tr>
+    <tr><td>可视化视频监控系统</td><td>智能预警系统</td></tr>
+    <tr><td>人员动态巡防追踪系统</td><td>物流车辆定位系统</td></tr>
+    <tr><td></td><td>计量辅助系统</td></tr>
+</tbody></table>
+
+      </div>
+     </div>
+   </div>
+</div>
+<canvas class="rain"></canvas>            <canvas class="dashed"></canvas>
+<div class="sphere">
+                <div class="sphere-bg"></div>
+                <div class="sum">
+                    <span></span>
+                </div>
+            </div>
+            <div class="cicle3"></div>
+            <div class="cicle4"></div>
+            <div class="cicle5"></div>
+            <div class="cicle6"></div>
+            <div class="cicle7"></div>
+            <div class="cicle8" onclick="goto(1);"><span>安全</span><p>环保</p></div>
+            <div class="cicle9" onclick="goto(2);"><span>物流</span><p>管理</p></div>
+            <div class="cicle10" onclick="goto(3);"><span>生产</span><p>管理</p></div>
+            <div class="cicle11" onclick="goto(4);"><span>Erp</span><p>应用</p></div>
+        </div>
+        <!-- 会销分析 -->
+ <div class="analyse">
+<div class="analyse-title"><span onclick="goto(4);">ERP应用管理系统</span></div>
+ <ul>
+ <li onclick="goto(4);"><img src="./images/s1.png" alt=""><h5>党群管理系统</h5></li>       
+ <li onclick="goto(4);"><img src="./images/s3.png" alt=""><h5>设备资产管理系统</h5><br><span></span><br></li>
+ <li onclick="goto(4);"><img src="./images/s2.png" alt=""><h5>人力资源管理系统</h5><br><span></span><br></li>
+ <li onclick="goto(4);"><img src="./images/s3.png" alt=""><h5>财务管理系统</h5><br><span></span><br></li>
+ <li onclick="goto(4);"><img src="./images/s1.png" alt=""><h5>OA办公系统</h5></li>
+</ul>
+</div>
+</div>
+
+<div class="bottom"><h3><span>智慧港口</span></h3></div>
+</body>
+<script src="./js/echarts.min.js"></script>
+<script src="./node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+function goto(x){
+  window.open('https://czport2.czport.com.cn/nav.html?'+x,'_blank');
+}
+</script>
+</html>

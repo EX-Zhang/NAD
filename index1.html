@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>池州远航</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <link  href="css/bootstrap.min.css" rel="stylesheet">
+    <link  href="css/base.css"  rel="stylesheet">
+<style>
+.outer{display: flex;align-items: center;justify-content: center;width: 200px;height: 35px;margin: 3px 5px 5px 1px;
+    background: linear-gradient(-45deg, transparent 9px, #5bdcfa 0) right,
+                 linear-gradient(135deg, transparent 9px, #5bdcfa 0) left;
+    background-size: 50% 100%;background-repeat: no-repeat;}
+.inner{
+    width: calc(100% - 4px); height: calc(100% - 3px);padding:5px 5px 15px 20px;
+    background: linear-gradient(-45deg, transparent 9px, #011032 0) right,
+        		 linear-gradient(135deg, transparent 9px, #011032 0) left;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;}
+h5>p{font-color:#fff;font-size:13px;}
+</style>
+</head>
+
+<body>
+    <!-- 头部模块 -->
+<header><h1><img src='logo.png' height='45'>&nbsp&nbsp<span>远航港口平台</span></h1><p></header>
+
+<div class="main">
+        <!-- top5 -->
+<div class="top5"><div class="top5-title"><span onclick="goto(1);">一、环保生态平台</span></div>
+<div class="top5-content">
+<ul>
+<li><div class="cicle"></div><div class="li-content" onclick="goto(1);">
+    <span>&nbsp生态绿化管理系统</span><span><img src="./images/up.png" alt=""></span></div></li>
+                          
+<li><div class="cicle"></div><div class="li-content" onclick="gogo(0);">
+    <span>&nbsp扬尘检测系统</span><span><img src="./images/up.png" alt=""></span></div></li>
+
+<li><div class="cicle"></div><div class="li-content"  onclick="goto(1);"><span>&nbsp喷淋管理系统</span>
+               <span><img src="./images/up.png" alt=""></span></div></li>
+	
+<li><div class="cicle"></div><div class="li-content"  onclick="goto(1);"><span>&nbsp岸电综合管理系统</span>
+               <span><img src="./images/up.png" alt=""></span></div></li>
+<li><div class="cicle"></div><div class="li-content" onclick="gogo(1);">
+    <span>&nbsp船舶垃圾接收系统</span><span><img src="./images/up.png" alt=""></span></div></li>
+
+<li><div class="cicle"></div><div class="li-content"  onclick="goto(1);"><span>&nbsp雨污水处理控制系统</span>
+               <span><img src="./images/up.png" alt=""></span></div></li>
+
+</ul>
+</div>
+</div>
+
+<div class="total"><div>
+
+
+
+        <!-- 会销分析 -->
+<div class='tot'><div class="t-title"> 二、智慧物流平台 </div><br><br>
+
+  <div class="col-md-3 col-lg-3 float-left"><br><br>
+  <div class="outer"><div class="inner" onclick="goto(2);">客户合同管理系统</div></div><br>
+  <div class="outer"><div class="inner" onclick="goto(2);">集疏运预约系统</div></div><br>
+  <div class="outer"><div class="inner" onclick="goto(2);">物流服务协同系统</div></div><br>
+  <div class="outer"><div class="inner" onclick="goto(2);">物流供求信息系统</div></div><br>
+  <div class="outer"><div class="inner" onclick="gogo(2);">智能通关物流平台</div></div><br>
+  <div class="outer"><div class="inner" onclick="goto(2);">计费自动结算系统</div></div><br>
+
+
+   </div>
+ <div class="col-md-6 col-lg-6" style="background-image: url('images/y0.png');background-size: 100% 100%;background-repeat: no-repeat;opacity:0.8;" height="100%">
+  <table width="100%"><tr height='100px'><td colspan=3></td></tr>
+  <tr height='40px'><td><h4>物</h4></td> <td width="180px"></td> <td><h4>生</h4></td></tr>
+  <tr height='40px'><td><h4>流</h4></td> <td></td> <td><h4>产</h4></td></tr>
+  <tr height='40px'><td><h4>管</h4></td> <td></td> <td><h4>调</h4></td></tr>
+  <tr height='40px'><td><h4>理</h4></td> <td width='220px'></td> <td><h4>度</h4></td></tr>
+  </table>
+  </div>
+  <div class="col-md-3 col-lg-3 float-left"><br><br>
+  <div class="outer" onclick="gogo(3)"><div class="inner">散杂货管理系统</div></div>
+  <div class="outer" onclick="gogo(3)"><div class="inner">集装箱管理系统</div></div>
+  <div class="outer" onclick="gogo(4)"><div class="inner">调度指挥管理平台</div></div>
+  <div class="outer" onclick="gogo(5)"><div class="inner">智能卡口管理系统</div></div>
+  <div class="outer" onclick="gogo(6)"><div class="inner">可视化视频监控系统</div></div>
+  <div class="outer" onclick="gogo(3)"><div class="inner">智能预警系统</div></div>
+  <div class="outer" onclick="gogo(7)"><div class="inner">人员动态巡防追踪系统</div></div>
+  <div class="outer" onclick="gogo(8)"><div class="inner">物流车辆定位系统</div></div>
+  <div class="outer" onclick="gogo(3)"><div class="inner">计量辅助系统</div></div>
+
+   </div>
+
+
+</div></div>
+
+<canvas class="rain"></canvas>            <canvas class="dashed"></canvas>
+<div class="sphere"><div class="sphere-bg"></div><div class="sum"><p>智慧物流</p><span></span></div></div>
+            <div class="cicle3"></div>
+            <div class="cicle4"></div>
+            <div class="cicle5"></div>
+            <div class="cicle6"></div>
+            <div class="cicle7"></div>
+        </div>
+
+<div class="analyse">
+<div class="analyse-title"><span onclick="goto(4);">三、ERP内部管理平台</span></div>
+ <ul>
+ <li onclick="gogo(9);"><img src="./images/s1.png" alt=""><h5>党群管理系统</h5></li>      
+ <li onclick="goto(4);"><img src="./images/s3.png" alt=""><h5>设备资产管理系统<br><br>
+      <p onclick="gogo(10);">&nbsp&nbsp◇能耗分析管理</p>
+      <p>&nbsp&nbsp◇设备管控检测系统</p>
+	  <p>&nbsp&nbsp◇物资库存管理系统</p>
+	  <p>&nbsp&nbsp◇照明智能控制系统</p>     </h5><br><br><span></span><br></li>
+ <br><br><br>
+ <li onclick="goto(4);"><img src="./images/s2.png" alt=""><h5>人力资源管理系统</h5><br><span></span><br></li>
+ <li onclick="goto(4);"><img src="./images/s3.png" alt=""><h5>财务管理系统</h5><br><span></span><br></li>
+ <li onclick="goto(4);"><img src="./images/s1.png" alt=""><h5>OA办公系统</h5></li>
+</ul>
+</div>
+</div>
+<div class="bottom"><h4><span onclick="gogo(11);">数据可视化平台</span></h4></div>
+</body>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script src="./js/china.js"></script>
+<script src="./js/mymap.js"></script>
+
+<script>
+function goto(x){
+  window.open('https://czport2.czport.com.cn/nav.html?'+x,'_blank');
+}
+function gogo(x){var u="http://dust.0531yun.cn,https://www.ship1024.com/pages/Login.jsp,http://120.55.55.247:82/TG_PLAT_WLSP/index.aspx?timeout=true ";
+  u+=",https://czport1.czport.com.cn/fst/d001.php,https://poc.10086.cn/station/main.html,http://192.168.1.30:8080/ycjk/login/";
+  u+=",http://112.123.252.38,https://poc.10086.cn/station/main.html,https://hf.gagps.net/";
+  u+=",https://www.ahdj.gov.cn:9000,http://168.tqdianbiao.com,https://czport1.czport.com.cn/datav/index9.html";
+  var v=u.split(','); window.open(v[x],'_blank');
+}
+</script>
+</html>
